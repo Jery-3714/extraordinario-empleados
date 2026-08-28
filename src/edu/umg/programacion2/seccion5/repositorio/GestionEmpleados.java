@@ -126,6 +126,7 @@ public class GestionEmpleados {
 		if (cantidad == 0) {
 			return null;
 		}
+		Empleado mayor = empleados[0];
 		
 
 	/**
