@@ -170,7 +170,9 @@ public class GestionEmpleados {
 	 * </ul>
 	 */
 	public void mostrarConteoPorTipo() {
-		// TODO: completar
+		String[] tipos = new String[cantidad];
+		int[] conteos = new int[cantidad];
+		int tiposEncontrados = 0;
 	}
 
 	/**
