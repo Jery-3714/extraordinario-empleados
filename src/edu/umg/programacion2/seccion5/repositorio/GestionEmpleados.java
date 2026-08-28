@@ -128,6 +128,13 @@ public class GestionEmpleados {
 		}
 		Empleado mayor = empleados[0];
 		
+		for (int i = 1; i < cantidad; i++) {
+		    if (empleados[i].calcularSalarioMensual() > mayor.calcularSalarioMensual()) {
+		       mayor = empleados[i];
+		    }
+		    }
+		return mayor;
+		}
 
 	/**
 	 * PREGUNTA PRÁCTICA 3 (20 pts)
