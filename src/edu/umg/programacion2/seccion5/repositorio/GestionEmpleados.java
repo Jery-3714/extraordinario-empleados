@@ -173,8 +173,32 @@ public class GestionEmpleados {
 		String[] tipos = new String[cantidad];
 		int[] conteos = new int[cantidad];
 		int tiposEncontrados = 0;
-	}
+	
+		for (int i = 0; i < cantidad; i++) {
 
+	        String tipo = empleados[i].getTipo();
+	        int posicion = -1;
+
+	        for (int j = 0; j < tiposEncontrados; j++) {
+	            if (tipos[j].equals(tipo)) {
+	                posicion = j;
+	                break;
+	            }
+	        }
+
+	        if (posicion != -1) {
+	            conteos[posicion]++;
+	        } else {
+	            tipos[tiposEncontrados] = tipo;
+	            conteos[tiposEncontrados] = 1;
+	            tiposEncontrados++;
+	        }
+	    }
+
+	    for (int i = 0; i < tiposEncontrados; i++) {
+	        System.out.println(tipos[i] + ": " + conteos[i]);
+	    }
+	}
 	/**
 	 * RETO OPCIONAL (10 pts extra)
 	 * <p>
