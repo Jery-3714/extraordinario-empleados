@@ -123,9 +123,10 @@ public class GestionEmpleados {
 	 * </ul>
 	 */
 	public Empleado empleadoConMayorSalario() {
-		// TODO: completar
-		return null;
-	}
+		if (cantidad == 0) {
+			return null;
+		}
+		
 
 	/**
 	 * PREGUNTA PRÁCTICA 3 (20 pts)
